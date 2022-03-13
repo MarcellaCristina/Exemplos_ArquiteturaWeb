@@ -11,9 +11,9 @@ lista.prototype.getLista = function(callback) {
       var obj = JSON.parse(result);
       var i = 0; //(obj.pessoas.length - 1);
 
-      obj.banco.forEach(function(banco) {
+      obj.bancos.forEach(function(bancos) {
         if (i >=  0) {
-          data[i] = banco;
+          data[i] = bancos;
 	      i++;
         }
       });
