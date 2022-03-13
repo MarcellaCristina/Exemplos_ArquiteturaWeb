@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Desenvolvedora Web Trainee</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <br/><br/><br/>
+      <h2>Oi eu sou a Lari, estou testando.</h2>
+      <br/>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+          </tr>
+        </thead>
+        <tbody>
+      <% if (list.length > 0) { %>
+          <% for(var i = 0; i < list.length; i++) {%> 
+            </tr>
+              <th scope="row"><%= list[i].id %></th>
+              <td><h4 ><%= list[i].nome %></h4></td>
+              <td><%= list[i].idade %></td>
+            </tr>
+          <% } %>
+        
+      <% } %>
+    </div>
+  </body>
+</html>

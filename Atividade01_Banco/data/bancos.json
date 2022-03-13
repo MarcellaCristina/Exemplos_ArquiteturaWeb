@@ -1,0 +1,34 @@
+﻿{
+  "banco": [
+    {
+      "COMPE": "001",
+      "ISPB": "00000000",
+      "Document": "00.000.000/0001-91",
+      "LongName": "Banco do Brasil S.A.",
+      "ShortName": "BCO DO BRASIL S.A.",
+      "Network": "RSFN",
+      "Type": "Banco Múltiplo",
+      "PixType": "DRCT",
+      "Url": "https://www.bb.com.br",
+      "DateOperationStarted": "2002-04-22",
+      "DatePixStarted": "2020-11-03 06:30:00",
+      "DateRegistered": "2021-05-05T09:11:12.7109988-03:00",
+      "DateUpdated": "2021-05-05T09:11:12.7110998-03:00"
+    },
+    {
+      "COMPE": "003",
+      "ISPB": "04902979",
+      "Document": "04.902.979/0001-44",
+      "LongName": "Banco da Amazônia S.A.",
+      "ShortName": "BCO DA AMAZONIA S.A.",
+      "Network": "RSFN",
+      "Type": "Banco Comercial",
+      "PixType": "DRCT",
+      "Url": "https://www.bancoamazonia.com.br",
+      "DateOperationStarted": "2002-04-22",
+      "DatePixStarted": "2020-11-03 06:30:00",
+      "DateRegistered": "2021-05-05T09:11:12.7114564-03:00",
+      "DateUpdated": "2021-05-05T09:11:12.7114565-03:00"
+    }
+  ]
+}
