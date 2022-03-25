@@ -2,19 +2,22 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
+//faz o get na raiz 
 router.get('/', async (req, res, next) => {
   try {
-    const docs = await global.db.findAll();
+    const docs = await global.db.findAll(); //cria uma promessa
     res.render('index', { title: 'Lista de Clientes', docs });
   } catch (err) {
     next(err);
   }
 })
 
+//configurando a rota do tipo novo registro. Tem que ter a rota de get(para entrar na rota) e a rota de post(para salvar)
 router.get('/new', (req, res, next) => {
   res.render('new', { title: 'Novo Cadastro', doc: {"nome":"","idade":""}, action: '/new' });
 });
 
+//configurando a rota para salvar (post) o novo registro.
 router.post('/new', async (req, res, next) => {
   const nome = req.body.nome;
   const idade = parseInt(req.body.idade);
@@ -28,6 +31,7 @@ router.post('/new', async (req, res, next) => {
   }
 })
 
+//rota de acesso a edição do registro
 router.get('/edit/:id', async (req, res, next) => {
   const id = req.params.id;
  
@@ -53,6 +57,7 @@ router.post('/edit/:id', async (req, res) => {
   }
 })
 
+//configurando rota do delete
 router.get('/delete/:id', async (req, res) => {
   const id = req.params.id;
  
