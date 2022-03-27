@@ -31,7 +31,7 @@ router.post('/new', async (req, res, next) => {
   }
 })
 
-//rota de acesso a edição do registro
+//rota de acesso a edição do registro. Tem que ter a rota de get(para entrar na rota) e a rota de post(para salvar)
 router.get('/edit/:id', async (req, res, next) => {
   const id = req.params.id;
  

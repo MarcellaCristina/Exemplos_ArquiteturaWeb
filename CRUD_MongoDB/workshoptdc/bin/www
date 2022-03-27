@@ -52,7 +52,7 @@ function normalizePort(val) {
 /**
  * Event listener for HTTP server "error" event.
  */
- global.db = require('../db');
+global.db = require('../db');
 function onError(error) {
   if (error.syscall !== 'listen') {
     throw error;
